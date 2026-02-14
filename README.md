@@ -1,1 +1,4 @@
 # CodeAudit2620
+The AI didn't touch the HTML code. It only rewrote the CSS. There are a couple of redundant pieces in the CSS like the font-family: inherit in for the select. Taking out that line made no difference. It did a good job at not using overly specific selectors. It kept all of those pretty simple. And it did use mostly CSS Variables. Some of the variables were useless tho. At least 2 of them (--bg and --primary-soft) it didn't use at all. It set them as variables then never touched them. And it used just white sometimes instead of a variable. 
+
+The AI's code just seems more complex. It does look more professional, but it added some random effects to get there. It also started to use a media query but didn't do much with it. I would get rid of the :hover effects because it is so subtle that you barely notice. It makes it kind of useless. I would also cut the useless variables. Only have them if you're going to use them.
